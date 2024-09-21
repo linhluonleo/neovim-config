@@ -1,7 +1,7 @@
 local options = {
 
     base46 = {
-        theme = "catppuccin", -- default theme
+        theme = "catppuccin",
         hl_add = {},
         hl_override = {},
         integrations = {},
@@ -14,21 +14,18 @@ local options = {
         cmp = {
             icons = true,
             lspkind_text = true,
-            style = "default", -- default/flat_light/flat_dark/atom/atom_colored
+            style = "default",
         },
 
-        telescope = { style = "borderless" }, -- borderless / bordered
+        telescope = { style = "borderless" },
 
         statusline = {
-            theme = "default", -- default/vscode/vscode_colored/minimal
-            -- default/round/block/arrow separators work only for default statusline theme
-            -- round and block will work for minimal theme only
+            theme = "default",
             separator_style = "block",
             order = nil,
             modules = nil,
         },
 
-        -- lazyload it when there are 1+ buffers
         tabufline = {
             enabled = true,
             lazyload = true,
@@ -78,8 +75,8 @@ local options = {
     lsp = { signature = true },
 
     cheatsheet = {
-        theme = "grid", -- simple/grid
-        excluded_groups = { "terminal (t)", "autopairs", "Nvim", "Opens" }, -- can add group name or with mode
+        theme = "grid",
+        excluded_groups = { "terminal (t)", "autopairs", "Nvim", "Opens" },
     },
 
     mason = { cmd = true, pkgs = {} },

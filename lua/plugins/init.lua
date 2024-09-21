@@ -1,11 +1,10 @@
 return {
     {
         "stevearc/conform.nvim",
-        event = "BufWritePre", -- uncomment for format on save
+        event = "BufWritePre",
         opts = require "configs.conform",
     },
 
-    -- These are some examples, uncomment them if you want to see them work!
     {
         "neovim/nvim-lspconfig",
         config = function()
@@ -51,12 +50,9 @@ return {
             "LazyGitFilter",
             "LazyGitFilterCurrentFile",
         },
-        -- optional for floating window border decoration
         dependencies = {
             "nvim-lua/plenary.nvim",
         },
-        -- setting the keybinding for LazyGit with 'keys' is recommended in
-        -- order to load the plugin when the command is run for the first time
         keys = {
             { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
         },
