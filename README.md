@@ -3,6 +3,7 @@
 - [Neovim](https://github.com/neovim/neovim).
 - [Python](https://www.python.org/downloads/).
 - [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts).
+- [Node](https://nodejs.org).
 - [Ripgrep](https://github.com/BurntSushi/ripgrep).
 - [Lazygit](https://github.com/jesseduffield/lazygit).
 - GCC, Windows users must have [mingw](http://mingw-w64.org/downloads) installed and set on path.
@@ -12,16 +13,23 @@
 ## Install
 ### Linux / Macos
 ```bash
-rm -rf ~/.config/nvim && rm -rf ~/.local/state/nvim && rm -rf ~/.local/share/nvim && git clone https://github.com/linhluonleo/neovim-config.git ~/.config/nvim && nvim
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+git clone https://github.com/linhluonleo/neovim-config.git ~/.config/nvim
 ```
 ### Windows
 - If you're using Command Prompt (CMD)
 ```sh
-rd -r ~\AppData\Local\nvim && rd -r ~\AppData\Local\nvim-data && git clone https://github.com/linhluonleo/neovim-config.git %USERPROFILE%\AppData\Local\nvim && nvim
+rd -r ~\AppData\Local\nvim
+rd -r ~\AppData\Local\nvim-data
+git clone https://github.com/linhluonleo/neovim-config.git %USERPROFILE%\AppData\Local\nvim
 ```
 - If you're using PowerShell (pwsh)
 ```sh
-rm -Force ~\AppData\Local\nvim && rm -Force ~\AppData\Local\nvim-data && git clone https://github.com/linhluonleo/neovim-config.git $ENV:USERPROFILE\AppData\Local\nvim && nvim
+rm -Force ~\AppData\Local\nvim
+rm -Force ~\AppData\Local\nvim-data
+git clone https://github.com/linhluonleo/neovim-config.git $ENV:USERPROFILE\AppData\Local\nvim
 ```
 ## Post-install
 Run `:MasonInstallAll` command after lazy.nvim finishes downloading plugins.
